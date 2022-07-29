@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <input id="movies">No.of Seats
+    <br><br>
+    <input readonly id="total">   
+    <script>
+        var no_of_tickets=Number(document.getElementById("movies").value);;
+        const ticket_cost = 150;
+        var total;
+       
+        
+            var dis;
+            total = no_of_tickets * ticket_cost;
+            dis = (total / 100) * 10;
+            var discount_total = total - dis;
+            document.getElementById("total").value=discount_total;
+            document.write("total cost of discount is " + dis+ " and total cost is"+discount_total);
+            document.write("<br><br>");
+  
+
+    </script>
+</head>
+
+</html>
