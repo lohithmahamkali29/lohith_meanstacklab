@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+function samp(){
+var arr=new Array();
+arr[0]=window.prompt("enter movie name:");
+arr[1]=window.prompt("enter actor name:");
+arr[2]=window.prompt("enter language of movie:");
+arr[3]=window.prompt("enter rating:");
+
+document.fn.name.value=arr[0];
+document.fn.star.value=arr[1];
+document.fn.lan.value=arr[2];
+document.fn.rat.value=arr[3];
+}
+</script>
+</head>
+<body>
+<form name="fn">
+<table>
+<tr><td>movie name</td><td><input type="text" id="name" name="name" ></td></tr>
+<tr><td>starring</td><td><input type="text" id="star" name="star
+"></td></tr>
+<tr><td>language</td><td><input type="text" id="lan" name="lan"></td></tr>
+<tr><td>rating</td><td><input type="text" id="rat" name="rat"></td></tr>
+<tr><input  type="button" value="Getdata" onClick="samp()"></tr>
+</table>
+</form></body>
+</html>
